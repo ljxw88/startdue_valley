@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "savedAtIso": "2026-02-14T22:45:48.660Z",
+  "world": {
+    "tick": 0,
+    "day": 1,
+    "minuteOfDay": 0
+  },
+  "npcs": [
+    {
+      "villagerId": "villager_ava",
+      "currentTileId": "tile_1_3",
+      "targetTileId": "tile_1_3",
+      "npcState": "acting",
+      "memoryStore": {
+        "villagerId": "villager_ava",
+        "shortTerm": [
+          {
+            "id": "memory_villager_ava_0_interaction_0_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_0_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 0,
+              "day": 1,
+              "minuteOfDay": 0
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          }
+        ],
+        "longTerm": []
+      },
+      "replan": {
+        "lastMajorEventTick": 0,
+        "intent": {
+          "action": "observe",
+          "targetTileId": "tile_1_3",
+          "reasoning": "Mock plan for Ava following scheduled observe task.",
+          "plannedAtTick": 384
+        },
+        "intentUpdatedAtTick": 384,
+        "lastPlanTick": 384,
+        "lastPlanSignature": "observe#tile_1_3#tile_1_3#tile_1_3#864#memory_villager_ava_0_interaction_0_villager_ava|villager_ben:0:0.55"
+      }
+    },
+    {
+      "villagerId": "villager_ben",
+      "currentTileId": "tile_2_3",
+      "targetTileId": "tile_2_3",
+      "npcState": "acting",
+      "memoryStore": {
+        "villagerId": "villager_ben",
+        "shortTerm": [
+          {
+            "id": "memory_villager_ben_0_interaction_0_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_0_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 0,
+              "day": 1,
+              "minuteOfDay": 0
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          }
+        ],
+        "longTerm": []
+      },
+      "replan": {
+        "lastMajorEventTick": 0,
+        "intent": {
+          "action": "observe",
+          "targetTileId": "tile_2_3",
+          "reasoning": "Mock plan for Ben following scheduled observe task.",
+          "plannedAtTick": 386
+        },
+        "intentUpdatedAtTick": 386,
+        "lastPlanTick": 386,
+        "lastPlanSignature": "observe#tile_2_3#tile_2_3#tile_2_3#876#memory_villager_ben_0_interaction_0_villager_ava|villager_ben:0:0.55"
+      }
+    },
+    {
+      "villagerId": "villager_cora",
+      "currentTileId": "tile_7_3",
+      "targetTileId": "tile_7_3",
+      "npcState": "acting",
+      "memoryStore": {
+        "villagerId": "villager_cora",
+        "shortTerm": [
+          {
+            "id": "memory_villager_cora_0_interaction_0_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_0_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 0,
+              "day": 1,
+              "minuteOfDay": 0
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          }
+        ],
+        "longTerm": []
+      },
+      "replan": {
+        "lastMajorEventTick": 0,
+        "intent": {
+          "action": "observe",
+          "targetTileId": "tile_7_3",
+          "reasoning": "Mock plan for Cora following scheduled observe task.",
+          "plannedAtTick": 383
+        },
+        "intentUpdatedAtTick": 383,
+        "lastPlanTick": 383,
+        "lastPlanSignature": "observe#tile_7_3#tile_7_3#tile_7_3#858#memory_villager_cora_0_interaction_0_villager_cora|villager_dax:0:0.55"
+      }
+    },
+    {
+      "villagerId": "villager_dax",
+      "currentTileId": "tile_8_3",
+      "targetTileId": "tile_8_3",
+      "npcState": "resting",
+      "memoryStore": {
+        "villagerId": "villager_dax",
+        "shortTerm": [
+          {
+            "id": "memory_villager_dax_0_interaction_0_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_0_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 0,
+              "day": 1,
+              "minuteOfDay": 0
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          }
+        ],
+        "longTerm": []
+      },
+      "replan": {
+        "lastMajorEventTick": 0,
+        "intent": {
+          "action": "observe",
+          "targetTileId": "tile_8_3",
+          "reasoning": "Mock plan for Dax following scheduled observe task.",
+          "plannedAtTick": 386
+        },
+        "intentUpdatedAtTick": 386,
+        "lastPlanTick": 386,
+        "lastPlanSignature": "observe#tile_8_3#tile_8_3#tile_8_3#876#memory_villager_dax_0_interaction_0_villager_cora|villager_dax:0:0.55"
+      }
+    },
+    {
+      "villagerId": "villager_eli",
+      "currentTileId": "tile_5_3",
+      "targetTileId": "tile_5_3",
+      "npcState": "acting",
+      "memoryStore": {
+        "villagerId": "villager_eli",
+        "shortTerm": [],
+        "longTerm": []
+      },
+      "replan": {
+        "intent": {
+          "action": "observe",
+          "targetTileId": "tile_5_3",
+          "reasoning": "Mock plan for Eli following scheduled observe task.",
+          "plannedAtTick": 386
+        },
+        "intentUpdatedAtTick": 386,
+        "lastPlanTick": 386,
+        "lastPlanSignature": "observe#tile_5_3#tile_5_3#tile_5_3#876#"
+      }
+    }
+  ]
+}
