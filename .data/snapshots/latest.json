@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "savedAtIso": "2026-02-14T22:45:48.660Z",
+  "savedAtIso": "2026-02-14T23:45:10.703Z",
   "world": {
-    "tick": 0,
-    "day": 1,
-    "minuteOfDay": 0
+    "tick": 485,
+    "day": 3,
+    "minuteOfDay": 30
   },
   "npcs": [
     {
@@ -33,21 +33,553 @@
             "importance": 0.55,
             "bucket": "short_term",
             "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_8_interaction_8_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_8_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 8,
+              "day": 1,
+              "minuteOfDay": 48
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_16_interaction_16_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_16_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 16,
+              "day": 1,
+              "minuteOfDay": 96
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_24_interaction_24_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_24_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 24,
+              "day": 1,
+              "minuteOfDay": 144
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_32_interaction_32_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_32_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 32,
+              "day": 1,
+              "minuteOfDay": 192
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_40_interaction_40_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_40_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 40,
+              "day": 1,
+              "minuteOfDay": 240
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_48_interaction_48_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_48_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 48,
+              "day": 1,
+              "minuteOfDay": 288
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_56_interaction_56_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_56_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 56,
+              "day": 1,
+              "minuteOfDay": 336
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_64_interaction_64_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_64_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 64,
+              "day": 1,
+              "minuteOfDay": 384
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_72_interaction_72_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_72_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 72,
+              "day": 1,
+              "minuteOfDay": 432
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_80_interaction_80_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_80_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 80,
+              "day": 1,
+              "minuteOfDay": 480
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_88_interaction_88_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_88_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 88,
+              "day": 1,
+              "minuteOfDay": 528
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_96_interaction_96_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_96_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 96,
+              "day": 1,
+              "minuteOfDay": 576
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_104_interaction_104_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_104_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 104,
+              "day": 1,
+              "minuteOfDay": 624
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_112_interaction_112_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_112_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 112,
+              "day": 1,
+              "minuteOfDay": 672
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_120_interaction_120_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_120_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 120,
+              "day": 1,
+              "minuteOfDay": 720
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_128_interaction_128_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_128_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 128,
+              "day": 1,
+              "minuteOfDay": 768
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_136_interaction_136_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_136_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 136,
+              "day": 1,
+              "minuteOfDay": 816
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_144_interaction_144_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_144_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 144,
+              "day": 1,
+              "minuteOfDay": 864
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_152_interaction_152_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_152_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 152,
+              "day": 1,
+              "minuteOfDay": 912
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_160_interaction_160_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_160_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 160,
+              "day": 1,
+              "minuteOfDay": 960
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_168_interaction_168_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_168_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 168,
+              "day": 1,
+              "minuteOfDay": 1008
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_176_interaction_176_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_176_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 176,
+              "day": 1,
+              "minuteOfDay": 1056
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_184_interaction_184_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_184_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 184,
+              "day": 1,
+              "minuteOfDay": 1104
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_192_interaction_192_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_192_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 192,
+              "day": 1,
+              "minuteOfDay": 1152
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_200_interaction_200_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_200_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 200,
+              "day": 1,
+              "minuteOfDay": 1200
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_208_interaction_208_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_208_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 208,
+              "day": 1,
+              "minuteOfDay": 1248
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_216_interaction_216_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_216_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 216,
+              "day": 1,
+              "minuteOfDay": 1296
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ava_224_interaction_224_villager_ava|villager_ben",
+            "villagerId": "villager_ava",
+            "type": "interaction",
+            "summary": "Interacted with Ben near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ben",
+              "eventId": "interaction_224_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 224,
+              "day": 1,
+              "minuteOfDay": 1344
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
           }
         ],
         "longTerm": []
       },
       "replan": {
-        "lastMajorEventTick": 0,
+        "lastMajorEventTick": 224,
         "intent": {
           "action": "observe",
           "targetTileId": "tile_1_3",
           "reasoning": "Mock plan for Ava following scheduled observe task.",
-          "plannedAtTick": 384
+          "plannedAtTick": 480
         },
-        "intentUpdatedAtTick": 384,
-        "lastPlanTick": 384,
-        "lastPlanSignature": "observe#tile_1_3#tile_1_3#tile_1_3#864#memory_villager_ava_0_interaction_0_villager_ava|villager_ben:0:0.55"
+        "intentUpdatedAtTick": 480,
+        "lastPlanTick": 480,
+        "lastPlanSignature": "observe#tile_1_3#tile_1_3#tile_1_3#0#memory_villager_ava_224_interaction_224_villager_ava|villager_ben:224:0.55|memory_villager_ava_216_interaction_216_villager_ava|villager_ben:216:0.55|memory_villager_ava_208_interaction_208_villager_ava|villager_ben:208:0.55|memory_villager_ava_200_interaction_200_villager_ava|villager_ben:200:0.55|memory_villager_ava_192_interaction_192_villager_ava|villager_ben:192:0.55|memory_villager_ava_184_interaction_184_villager_ava|villager_ben:184:0.55|memory_villager_ava_176_interaction_176_villager_ava|villager_ben:176:0.55|memory_villager_ava_168_interaction_168_villager_ava|villager_ben:168:0.55|memory_villager_ava_160_interaction_160_villager_ava|villager_ben:160:0.55|memory_villager_ava_152_interaction_152_villager_ava|villager_ben:152:0.55|memory_villager_ava_144_interaction_144_villager_ava|villager_ben:144:0.55|memory_villager_ava_136_interaction_136_villager_ava|villager_ben:136:0.55|memory_villager_ava_128_interaction_128_villager_ava|villager_ben:128:0.55|memory_villager_ava_120_interaction_120_villager_ava|villager_ben:120:0.55|memory_villager_ava_112_interaction_112_villager_ava|villager_ben:112:0.55|memory_villager_ava_104_interaction_104_villager_ava|villager_ben:104:0.55|memory_villager_ava_96_interaction_96_villager_ava|villager_ben:96:0.55|memory_villager_ava_88_interaction_88_villager_ava|villager_ben:88:0.55|memory_villager_ava_80_interaction_80_villager_ava|villager_ben:80:0.55|memory_villager_ava_72_interaction_72_villager_ava|villager_ben:72:0.55"
       }
     },
     {
@@ -76,21 +608,553 @@
             "importance": 0.55,
             "bucket": "short_term",
             "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_8_interaction_8_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_8_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 8,
+              "day": 1,
+              "minuteOfDay": 48
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_16_interaction_16_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_16_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 16,
+              "day": 1,
+              "minuteOfDay": 96
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_24_interaction_24_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_24_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 24,
+              "day": 1,
+              "minuteOfDay": 144
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_32_interaction_32_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_32_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 32,
+              "day": 1,
+              "minuteOfDay": 192
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_40_interaction_40_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_40_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 40,
+              "day": 1,
+              "minuteOfDay": 240
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_48_interaction_48_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_48_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 48,
+              "day": 1,
+              "minuteOfDay": 288
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_56_interaction_56_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_56_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 56,
+              "day": 1,
+              "minuteOfDay": 336
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_64_interaction_64_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_64_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 64,
+              "day": 1,
+              "minuteOfDay": 384
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_72_interaction_72_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_72_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 72,
+              "day": 1,
+              "minuteOfDay": 432
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_80_interaction_80_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_80_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 80,
+              "day": 1,
+              "minuteOfDay": 480
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_88_interaction_88_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_88_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 88,
+              "day": 1,
+              "minuteOfDay": 528
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_96_interaction_96_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_96_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 96,
+              "day": 1,
+              "minuteOfDay": 576
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_104_interaction_104_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_104_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 104,
+              "day": 1,
+              "minuteOfDay": 624
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_112_interaction_112_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_112_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 112,
+              "day": 1,
+              "minuteOfDay": 672
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_120_interaction_120_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_120_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 120,
+              "day": 1,
+              "minuteOfDay": 720
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_128_interaction_128_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_128_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 128,
+              "day": 1,
+              "minuteOfDay": 768
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_136_interaction_136_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_136_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 136,
+              "day": 1,
+              "minuteOfDay": 816
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_144_interaction_144_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_144_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 144,
+              "day": 1,
+              "minuteOfDay": 864
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_152_interaction_152_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_152_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 152,
+              "day": 1,
+              "minuteOfDay": 912
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_160_interaction_160_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_160_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 160,
+              "day": 1,
+              "minuteOfDay": 960
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_168_interaction_168_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_168_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 168,
+              "day": 1,
+              "minuteOfDay": 1008
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_176_interaction_176_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_176_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 176,
+              "day": 1,
+              "minuteOfDay": 1056
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_184_interaction_184_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_184_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 184,
+              "day": 1,
+              "minuteOfDay": 1104
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_192_interaction_192_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_192_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 192,
+              "day": 1,
+              "minuteOfDay": 1152
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_200_interaction_200_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_200_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 200,
+              "day": 1,
+              "minuteOfDay": 1200
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_208_interaction_208_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_208_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 208,
+              "day": 1,
+              "minuteOfDay": 1248
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_216_interaction_216_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_216_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 216,
+              "day": 1,
+              "minuteOfDay": 1296
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_ben_224_interaction_224_villager_ava|villager_ben",
+            "villagerId": "villager_ben",
+            "type": "interaction",
+            "summary": "Interacted with Ava near tile_1_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_ava",
+              "eventId": "interaction_224_villager_ava|villager_ben"
+            },
+            "createdAt": {
+              "tick": 224,
+              "day": 1,
+              "minuteOfDay": 1344
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
           }
         ],
         "longTerm": []
       },
       "replan": {
-        "lastMajorEventTick": 0,
+        "lastMajorEventTick": 224,
         "intent": {
           "action": "observe",
           "targetTileId": "tile_2_3",
           "reasoning": "Mock plan for Ben following scheduled observe task.",
-          "plannedAtTick": 386
+          "plannedAtTick": 478
         },
-        "intentUpdatedAtTick": 386,
-        "lastPlanTick": 386,
-        "lastPlanSignature": "observe#tile_2_3#tile_2_3#tile_2_3#876#memory_villager_ben_0_interaction_0_villager_ava|villager_ben:0:0.55"
+        "intentUpdatedAtTick": 478,
+        "lastPlanTick": 478,
+        "lastPlanSignature": "observe#tile_2_3#tile_2_3#tile_2_3#1428#memory_villager_ben_224_interaction_224_villager_ava|villager_ben:224:0.55|memory_villager_ben_216_interaction_216_villager_ava|villager_ben:216:0.55|memory_villager_ben_208_interaction_208_villager_ava|villager_ben:208:0.55|memory_villager_ben_200_interaction_200_villager_ava|villager_ben:200:0.55|memory_villager_ben_192_interaction_192_villager_ava|villager_ben:192:0.55|memory_villager_ben_184_interaction_184_villager_ava|villager_ben:184:0.55|memory_villager_ben_176_interaction_176_villager_ava|villager_ben:176:0.55|memory_villager_ben_168_interaction_168_villager_ava|villager_ben:168:0.55|memory_villager_ben_160_interaction_160_villager_ava|villager_ben:160:0.55|memory_villager_ben_152_interaction_152_villager_ava|villager_ben:152:0.55|memory_villager_ben_144_interaction_144_villager_ava|villager_ben:144:0.55|memory_villager_ben_136_interaction_136_villager_ava|villager_ben:136:0.55|memory_villager_ben_128_interaction_128_villager_ava|villager_ben:128:0.55|memory_villager_ben_120_interaction_120_villager_ava|villager_ben:120:0.55|memory_villager_ben_112_interaction_112_villager_ava|villager_ben:112:0.55|memory_villager_ben_104_interaction_104_villager_ava|villager_ben:104:0.55|memory_villager_ben_96_interaction_96_villager_ava|villager_ben:96:0.55|memory_villager_ben_88_interaction_88_villager_ava|villager_ben:88:0.55|memory_villager_ben_80_interaction_80_villager_ava|villager_ben:80:0.55|memory_villager_ben_72_interaction_72_villager_ava|villager_ben:72:0.55"
       }
     },
     {
@@ -119,28 +1183,560 @@
             "importance": 0.55,
             "bucket": "short_term",
             "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_8_interaction_8_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_8_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 8,
+              "day": 1,
+              "minuteOfDay": 48
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_16_interaction_16_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_16_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 16,
+              "day": 1,
+              "minuteOfDay": 96
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_24_interaction_24_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_24_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 24,
+              "day": 1,
+              "minuteOfDay": 144
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_32_interaction_32_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_32_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 32,
+              "day": 1,
+              "minuteOfDay": 192
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_40_interaction_40_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_40_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 40,
+              "day": 1,
+              "minuteOfDay": 240
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_48_interaction_48_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_48_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 48,
+              "day": 1,
+              "minuteOfDay": 288
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_56_interaction_56_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_56_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 56,
+              "day": 1,
+              "minuteOfDay": 336
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_64_interaction_64_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_64_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 64,
+              "day": 1,
+              "minuteOfDay": 384
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_72_interaction_72_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_72_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 72,
+              "day": 1,
+              "minuteOfDay": 432
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_80_interaction_80_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_80_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 80,
+              "day": 1,
+              "minuteOfDay": 480
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_88_interaction_88_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_88_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 88,
+              "day": 1,
+              "minuteOfDay": 528
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_96_interaction_96_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_96_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 96,
+              "day": 1,
+              "minuteOfDay": 576
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_104_interaction_104_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_104_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 104,
+              "day": 1,
+              "minuteOfDay": 624
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_112_interaction_112_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_112_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 112,
+              "day": 1,
+              "minuteOfDay": 672
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_120_interaction_120_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_120_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 120,
+              "day": 1,
+              "minuteOfDay": 720
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_128_interaction_128_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_128_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 128,
+              "day": 1,
+              "minuteOfDay": 768
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_136_interaction_136_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_136_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 136,
+              "day": 1,
+              "minuteOfDay": 816
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_144_interaction_144_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_144_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 144,
+              "day": 1,
+              "minuteOfDay": 864
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_152_interaction_152_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_152_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 152,
+              "day": 1,
+              "minuteOfDay": 912
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_160_interaction_160_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_160_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 160,
+              "day": 1,
+              "minuteOfDay": 960
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_168_interaction_168_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_168_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 168,
+              "day": 1,
+              "minuteOfDay": 1008
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_176_interaction_176_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_176_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 176,
+              "day": 1,
+              "minuteOfDay": 1056
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_184_interaction_184_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_184_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 184,
+              "day": 1,
+              "minuteOfDay": 1104
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_192_interaction_192_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_192_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 192,
+              "day": 1,
+              "minuteOfDay": 1152
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_200_interaction_200_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_200_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 200,
+              "day": 1,
+              "minuteOfDay": 1200
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_208_interaction_208_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_208_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 208,
+              "day": 1,
+              "minuteOfDay": 1248
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_216_interaction_216_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_216_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 216,
+              "day": 1,
+              "minuteOfDay": 1296
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_cora_224_interaction_224_villager_cora|villager_dax",
+            "villagerId": "villager_cora",
+            "type": "interaction",
+            "summary": "Interacted with Dax near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_dax",
+              "eventId": "interaction_224_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 224,
+              "day": 1,
+              "minuteOfDay": 1344
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
           }
         ],
         "longTerm": []
       },
       "replan": {
-        "lastMajorEventTick": 0,
+        "lastMajorEventTick": 224,
         "intent": {
           "action": "observe",
           "targetTileId": "tile_7_3",
           "reasoning": "Mock plan for Cora following scheduled observe task.",
-          "plannedAtTick": 383
+          "plannedAtTick": 478
         },
-        "intentUpdatedAtTick": 383,
-        "lastPlanTick": 383,
-        "lastPlanSignature": "observe#tile_7_3#tile_7_3#tile_7_3#858#memory_villager_cora_0_interaction_0_villager_cora|villager_dax:0:0.55"
+        "intentUpdatedAtTick": 478,
+        "lastPlanTick": 478,
+        "lastPlanSignature": "observe#tile_7_3#tile_7_3#tile_7_3#1428#memory_villager_cora_224_interaction_224_villager_cora|villager_dax:224:0.55|memory_villager_cora_216_interaction_216_villager_cora|villager_dax:216:0.55|memory_villager_cora_208_interaction_208_villager_cora|villager_dax:208:0.55|memory_villager_cora_200_interaction_200_villager_cora|villager_dax:200:0.55|memory_villager_cora_192_interaction_192_villager_cora|villager_dax:192:0.55|memory_villager_cora_184_interaction_184_villager_cora|villager_dax:184:0.55|memory_villager_cora_176_interaction_176_villager_cora|villager_dax:176:0.55|memory_villager_cora_168_interaction_168_villager_cora|villager_dax:168:0.55|memory_villager_cora_160_interaction_160_villager_cora|villager_dax:160:0.55|memory_villager_cora_152_interaction_152_villager_cora|villager_dax:152:0.55|memory_villager_cora_144_interaction_144_villager_cora|villager_dax:144:0.55|memory_villager_cora_136_interaction_136_villager_cora|villager_dax:136:0.55|memory_villager_cora_128_interaction_128_villager_cora|villager_dax:128:0.55|memory_villager_cora_120_interaction_120_villager_cora|villager_dax:120:0.55|memory_villager_cora_112_interaction_112_villager_cora|villager_dax:112:0.55|memory_villager_cora_104_interaction_104_villager_cora|villager_dax:104:0.55|memory_villager_cora_96_interaction_96_villager_cora|villager_dax:96:0.55|memory_villager_cora_88_interaction_88_villager_cora|villager_dax:88:0.55|memory_villager_cora_80_interaction_80_villager_cora|villager_dax:80:0.55|memory_villager_cora_72_interaction_72_villager_cora|villager_dax:72:0.55"
       }
     },
     {
       "villagerId": "villager_dax",
       "currentTileId": "tile_8_3",
       "targetTileId": "tile_8_3",
-      "npcState": "resting",
+      "npcState": "acting",
       "memoryStore": {
         "villagerId": "villager_dax",
         "shortTerm": [
@@ -162,21 +1758,553 @@
             "importance": 0.55,
             "bucket": "short_term",
             "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_8_interaction_8_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_8_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 8,
+              "day": 1,
+              "minuteOfDay": 48
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_16_interaction_16_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_16_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 16,
+              "day": 1,
+              "minuteOfDay": 96
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_24_interaction_24_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_24_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 24,
+              "day": 1,
+              "minuteOfDay": 144
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_32_interaction_32_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_32_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 32,
+              "day": 1,
+              "minuteOfDay": 192
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_40_interaction_40_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_40_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 40,
+              "day": 1,
+              "minuteOfDay": 240
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_48_interaction_48_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_48_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 48,
+              "day": 1,
+              "minuteOfDay": 288
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_56_interaction_56_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_56_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 56,
+              "day": 1,
+              "minuteOfDay": 336
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_64_interaction_64_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_64_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 64,
+              "day": 1,
+              "minuteOfDay": 384
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_72_interaction_72_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_72_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 72,
+              "day": 1,
+              "minuteOfDay": 432
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_80_interaction_80_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_80_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 80,
+              "day": 1,
+              "minuteOfDay": 480
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_88_interaction_88_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_88_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 88,
+              "day": 1,
+              "minuteOfDay": 528
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_96_interaction_96_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_96_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 96,
+              "day": 1,
+              "minuteOfDay": 576
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_104_interaction_104_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_104_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 104,
+              "day": 1,
+              "minuteOfDay": 624
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_112_interaction_112_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_112_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 112,
+              "day": 1,
+              "minuteOfDay": 672
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_120_interaction_120_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_120_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 120,
+              "day": 1,
+              "minuteOfDay": 720
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_128_interaction_128_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_128_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 128,
+              "day": 1,
+              "minuteOfDay": 768
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_136_interaction_136_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_136_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 136,
+              "day": 1,
+              "minuteOfDay": 816
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_144_interaction_144_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_144_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 144,
+              "day": 1,
+              "minuteOfDay": 864
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_152_interaction_152_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_152_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 152,
+              "day": 1,
+              "minuteOfDay": 912
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_160_interaction_160_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_160_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 160,
+              "day": 1,
+              "minuteOfDay": 960
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_168_interaction_168_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_168_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 168,
+              "day": 1,
+              "minuteOfDay": 1008
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_176_interaction_176_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_176_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 176,
+              "day": 1,
+              "minuteOfDay": 1056
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_184_interaction_184_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_184_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 184,
+              "day": 1,
+              "minuteOfDay": 1104
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_192_interaction_192_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_192_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 192,
+              "day": 1,
+              "minuteOfDay": 1152
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_200_interaction_200_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_200_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 200,
+              "day": 1,
+              "minuteOfDay": 1200
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_208_interaction_208_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_208_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 208,
+              "day": 1,
+              "minuteOfDay": 1248
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_216_interaction_216_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_216_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 216,
+              "day": 1,
+              "minuteOfDay": 1296
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
+          },
+          {
+            "id": "memory_villager_dax_224_interaction_224_villager_cora|villager_dax",
+            "villagerId": "villager_dax",
+            "type": "interaction",
+            "summary": "Interacted with Cora near tile_7_3.",
+            "source": {
+              "type": "villager",
+              "actorVillagerId": "villager_cora",
+              "eventId": "interaction_224_villager_cora|villager_dax"
+            },
+            "createdAt": {
+              "tick": 224,
+              "day": 1,
+              "minuteOfDay": 1344
+            },
+            "importance": 0.55,
+            "bucket": "short_term",
+            "expiresAfterTicks": 360
           }
         ],
         "longTerm": []
       },
       "replan": {
-        "lastMajorEventTick": 0,
+        "lastMajorEventTick": 224,
         "intent": {
           "action": "observe",
           "targetTileId": "tile_8_3",
           "reasoning": "Mock plan for Dax following scheduled observe task.",
-          "plannedAtTick": 386
+          "plannedAtTick": 478
         },
-        "intentUpdatedAtTick": 386,
-        "lastPlanTick": 386,
-        "lastPlanSignature": "observe#tile_8_3#tile_8_3#tile_8_3#876#memory_villager_dax_0_interaction_0_villager_cora|villager_dax:0:0.55"
+        "intentUpdatedAtTick": 478,
+        "lastPlanTick": 478,
+        "lastPlanSignature": "observe#tile_8_3#tile_8_3#tile_8_3#1428#memory_villager_dax_224_interaction_224_villager_cora|villager_dax:224:0.55|memory_villager_dax_216_interaction_216_villager_cora|villager_dax:216:0.55|memory_villager_dax_208_interaction_208_villager_cora|villager_dax:208:0.55|memory_villager_dax_200_interaction_200_villager_cora|villager_dax:200:0.55|memory_villager_dax_192_interaction_192_villager_cora|villager_dax:192:0.55|memory_villager_dax_184_interaction_184_villager_cora|villager_dax:184:0.55|memory_villager_dax_176_interaction_176_villager_cora|villager_dax:176:0.55|memory_villager_dax_168_interaction_168_villager_cora|villager_dax:168:0.55|memory_villager_dax_160_interaction_160_villager_cora|villager_dax:160:0.55|memory_villager_dax_152_interaction_152_villager_cora|villager_dax:152:0.55|memory_villager_dax_144_interaction_144_villager_cora|villager_dax:144:0.55|memory_villager_dax_136_interaction_136_villager_cora|villager_dax:136:0.55|memory_villager_dax_128_interaction_128_villager_cora|villager_dax:128:0.55|memory_villager_dax_120_interaction_120_villager_cora|villager_dax:120:0.55|memory_villager_dax_112_interaction_112_villager_cora|villager_dax:112:0.55|memory_villager_dax_104_interaction_104_villager_cora|villager_dax:104:0.55|memory_villager_dax_96_interaction_96_villager_cora|villager_dax:96:0.55|memory_villager_dax_88_interaction_88_villager_cora|villager_dax:88:0.55|memory_villager_dax_80_interaction_80_villager_cora|villager_dax:80:0.55|memory_villager_dax_72_interaction_72_villager_cora|villager_dax:72:0.55"
       }
     },
     {
@@ -194,11 +2322,11 @@
           "action": "observe",
           "targetTileId": "tile_5_3",
           "reasoning": "Mock plan for Eli following scheduled observe task.",
-          "plannedAtTick": 386
+          "plannedAtTick": 478
         },
-        "intentUpdatedAtTick": 386,
-        "lastPlanTick": 386,
-        "lastPlanSignature": "observe#tile_5_3#tile_5_3#tile_5_3#876#"
+        "intentUpdatedAtTick": 478,
+        "lastPlanTick": 478,
+        "lastPlanSignature": "observe#tile_5_3#tile_5_3#tile_5_3#1428#"
       }
     }
   ]

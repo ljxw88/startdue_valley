@@ -106,7 +106,14 @@ function resolveDirection(
   return deltaY >= 0 ? "down" : "up";
 }
 
+const tileCoordinateCache = new Map<TileId, { x: number; y: number }>();
+
 function parseTileIdCoordinate(tileId: TileId): { x: number; y: number } {
+  const cached = tileCoordinateCache.get(tileId);
+  if (cached) return cached;
+
   const [, x = "0", y = "0"] = tileId.split("_");
-  return { x: Number.parseInt(x, 10), y: Number.parseInt(y, 10) };
+  const result = { x: Number.parseInt(x, 10), y: Number.parseInt(y, 10) };
+  tileCoordinateCache.set(tileId, result);
+  return result;
 }

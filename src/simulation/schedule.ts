@@ -47,7 +47,21 @@ export function resolveActiveVillagerTask(
   schedule: VillagerDailySchedule,
   time: SimulationTime
 ): ActiveVillagerTask {
-  const activeEntry = schedule.entries.findLast((entry) => entry.startMinute <= time.minuteOfDay);
+  const entries = schedule.entries;
+  let low = 0;
+  let high = entries.length - 1;
+  let activeEntry: VillagerScheduleEntry | undefined;
+
+  while (low <= high) {
+    const mid = (low + high) >> 1;
+    if (entries[mid].startMinute <= time.minuteOfDay) {
+      activeEntry = entries[mid];
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+
   if (!activeEntry) {
     return {
       villagerId: schedule.villagerId,

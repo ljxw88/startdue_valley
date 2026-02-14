@@ -122,22 +122,22 @@ function findShortestPath(
   destinationTileId: TileId,
   blockedTileIds: ReadonlySet<TileId>,
 ): readonly TileId[] | undefined {
-  const openSet = new Set<TileId>([startTileId]);
   const closedSet = new Set<TileId>();
   const cameFrom = new Map<TileId, TileId>();
   const gScore = new Map<TileId, number>([[startTileId, 0]]);
-  const fScore = new Map<TileId, number>([
-    [startTileId, heuristicDistance(nodesById, startTileId, destinationTileId)],
-  ]);
 
-  while (openSet.size > 0) {
-    const current = pickLowestScore(openSet, fScore);
+  const startF = heuristicDistance(nodesById, startTileId, destinationTileId);
+  const heap = new BinaryMinHeap();
+  heap.push(startTileId, startF);
+
+  while (heap.size > 0) {
+    const current = heap.pop();
     if (!current) return undefined;
     if (current === destinationTileId) {
       return reconstructPath(cameFrom, current);
     }
 
-    openSet.delete(current);
+    if (closedSet.has(current)) continue;
     closedSet.add(current);
 
     const currentNode = nodesById.get(current);
@@ -160,8 +160,8 @@ function findShortestPath(
 
       cameFrom.set(neighborId, current);
       gScore.set(neighborId, tentativeScore);
-      fScore.set(neighborId, tentativeScore + heuristicDistance(nodesById, neighborId, destinationTileId));
-      openSet.add(neighborId);
+      const f = tentativeScore + heuristicDistance(nodesById, neighborId, destinationTileId);
+      heap.push(neighborId, f);
     }
   }
 
@@ -182,23 +182,59 @@ function heuristicDistance(
   return Math.abs(fromNode.x - toNode.x) + Math.abs(fromNode.y - toNode.y);
 }
 
-function pickLowestScore(openSet: ReadonlySet<TileId>, fScore: ReadonlyMap<TileId, number>): TileId | undefined {
-  let bestId: TileId | undefined;
-  let bestScore = Number.POSITIVE_INFINITY;
+class BinaryMinHeap {
+  private heap: { id: TileId; score: number }[] = [];
 
-  for (const tileId of openSet) {
-    const score = fScore.get(tileId) ?? Number.POSITIVE_INFINITY;
-    if (score < bestScore) {
-      bestScore = score;
-      bestId = tileId;
+  get size(): number {
+    return this.heap.length;
+  }
+
+  push(id: TileId, score: number): void {
+    this.heap.push({ id, score });
+    this.bubbleUp(this.heap.length - 1);
+  }
+
+  pop(): TileId | undefined {
+    if (this.heap.length === 0) return undefined;
+    const top = this.heap[0];
+    const last = this.heap.pop()!;
+    if (this.heap.length > 0) {
+      this.heap[0] = last;
+      this.sinkDown(0);
+    }
+    return top.id;
+  }
+
+  private bubbleUp(index: number): void {
+    while (index > 0) {
+      const parentIndex = (index - 1) >> 1;
+      if (this.heap[parentIndex].score <= this.heap[index].score) break;
+      [this.heap[parentIndex], this.heap[index]] = [this.heap[index], this.heap[parentIndex]];
+      index = parentIndex;
     }
   }
 
-  return bestId;
+  private sinkDown(index: number): void {
+    const length = this.heap.length;
+    while (true) {
+      let smallest = index;
+      const left = 2 * index + 1;
+      const right = 2 * index + 2;
+      if (left < length && this.heap[left].score < this.heap[smallest].score) {
+        smallest = left;
+      }
+      if (right < length && this.heap[right].score < this.heap[smallest].score) {
+        smallest = right;
+      }
+      if (smallest === index) break;
+      [this.heap[smallest], this.heap[index]] = [this.heap[index], this.heap[smallest]];
+      index = smallest;
+    }
+  }
 }
 
 function reconstructPath(cameFrom: ReadonlyMap<TileId, TileId>, current: TileId): readonly TileId[] {
-  const path: TileId[] = [current];
+  const reversePath: TileId[] = [current];
   let currentStep: TileId | undefined = current;
 
   while (currentStep) {
@@ -207,11 +243,12 @@ function reconstructPath(cameFrom: ReadonlyMap<TileId, TileId>, current: TileId)
       break;
     }
 
-    path.unshift(previousStep);
+    reversePath.push(previousStep);
     currentStep = previousStep;
   }
 
-  return path;
+  reversePath.reverse();
+  return reversePath;
 }
 
 function toCacheKey(startTileId: TileId, destinationTileId: TileId, blockedTileIds: ReadonlySet<TileId>): string {

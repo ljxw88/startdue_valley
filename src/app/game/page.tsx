@@ -13,6 +13,7 @@ import {
   VILLAGE_MAP_DIMENSIONS,
   VILLAGE_MAP_SEED,
   type Tile,
+  type TileId,
   type Villager,
   type VillagerId,
   type VillagerMemoryStore,
@@ -69,6 +70,7 @@ const BASE_TICK_INTERVAL_MS = 500;
 const DAY_LENGTH_TICKS = 240;
 const NPC_REPLAN_INTERVAL_TICKS = env.NEXT_PUBLIC_NPC_REPLAN_INTERVAL_TICKS;
 const NPC_MAX_REPLANS_PER_TICK = env.NEXT_PUBLIC_NPC_MAX_REPLANS_PER_TICK;
+const NPC_THINK_BUDGET_MS = env.NEXT_PUBLIC_NPC_THINK_BUDGET_MS;
 const SIMULATION_SPEED_LEVELS = [0.5, 1, 2, 4] as const;
 const TILE_LAYER_ORDER: readonly Tile["type"][] = [
   "water",
@@ -93,6 +95,11 @@ const INTERACTION_COOLDOWN_TICKS = 8;
 const INTERACTION_MEMORY_EXPIRATION_TICKS = 360;
 const SNAPSHOT_PERSIST_INTERVAL_TICKS = 5;
 const JOURNAL_MAX_EVENTS = 120;
+const PLAYER_SPAWN_TILE_ID = "tile_5_5" as TileId;
+
+const walkableTileIdSet = new Set(
+  VILLAGE_MAP_SEED.filter((tile) => tile.walkable).map((tile) => tile.id),
+);
 
 function clamp(value: number, min: number, max: number): number {
   return Math.min(Math.max(value, min), max);
@@ -105,9 +112,16 @@ function toViewportCoordinate(tile: Tile, cameraX: number, cameraY: number) {
   };
 }
 
+const tileIdCoordinateCache = new Map<string, { x: number; y: number }>();
+
 function parseTileIdCoordinate(tileId: string) {
+  const cached = tileIdCoordinateCache.get(tileId);
+  if (cached) return cached;
+
   const [, x = "0", y = "0"] = tileId.split("_");
-  return { x: Number.parseInt(x, 10), y: Number.parseInt(y, 10) };
+  const result = { x: Number.parseInt(x, 10), y: Number.parseInt(y, 10) };
+  tileIdCoordinateCache.set(tileId, result);
+  return result;
 }
 
 function isNpcInteractionEligible(npcState: NpcState): boolean {
@@ -357,6 +371,8 @@ export default function GamePage() {
   const [villagerRuntime, setVillagerRuntime] = useState<VillagerRuntimeState[]>(() =>
     createInitialVillagerRuntime(villagers),
   );
+  const [playerTileId, setPlayerTileId] = useState<TileId>(PLAYER_SPAWN_TILE_ID);
+  const [cameraFollowPlayer, setCameraFollowPlayer] = useState(false);
 
   const simulationSpeed = SIMULATION_SPEED_LEVELS[speedIndex] ?? SIMULATION_SPEED_LEVELS[1];
 
@@ -392,13 +408,55 @@ export default function GamePage() {
     [maxCameraX, maxCameraY],
   );
 
+  const movePlayer = useCallback(
+    (deltaX: number, deltaY: number) => {
+      setPlayerTileId((current) => {
+        const coord = parseTileIdCoordinate(current);
+        const nextX = coord.x + deltaX;
+        const nextY = coord.y + deltaY;
+        const nextTileId = `tile_${nextX}_${nextY}` as TileId;
+        if (
+          nextX < 0 ||
+          nextX >= VILLAGE_MAP_DIMENSIONS.width ||
+          nextY < 0 ||
+          nextY >= VILLAGE_MAP_DIMENSIONS.height
+        ) {
+          return current;
+        }
+        if (!walkableTileIdSet.has(nextTileId)) {
+          return current;
+        }
+        return nextTileId;
+      });
+    },
+    [],
+  );
+
+  useEffect(() => {
+    if (!cameraFollowPlayer) return;
+    const coord = parseTileIdCoordinate(playerTileId);
+    const targetX = clamp(
+      coord.x - Math.floor(VIEWPORT_TILE_WIDTH / 2),
+      0,
+      maxCameraX,
+    );
+    const targetY = clamp(
+      coord.y - Math.floor(VIEWPORT_TILE_HEIGHT / 2),
+      0,
+      maxCameraY,
+    );
+    setCamera({ x: targetX, y: targetY });
+  }, [cameraFollowPlayer, maxCameraX, maxCameraY, playerTileId]);
+
   const appendJournalEvents = useCallback((events: readonly SimulationJournalEvent[]) => {
     if (events.length === 0) {
       return;
     }
-    journalEventsRef.current = [...events, ...journalEventsRef.current]
-      .sort((left, right) => right.tick - left.tick)
-      .slice(0, JOURNAL_MAX_EVENTS);
+    const merged = [...events, ...journalEventsRef.current];
+    if (merged.length > JOURNAL_MAX_EVENTS) {
+      merged.length = JOURNAL_MAX_EVENTS;
+    }
+    journalEventsRef.current = merged;
   }, []);
 
   const recordNpcObservability = useCallback(
@@ -739,8 +797,12 @@ export default function GamePage() {
   useEffect(() => {
     const simulationTime = toSimulationTime(tick, DAY_LENGTH_TICKS);
     let replansRequestedThisTick = 0;
+    const replanStartTime = performance.now();
     for (const runtime of villagerRuntime) {
       if (replansRequestedThisTick >= NPC_MAX_REPLANS_PER_TICK) {
+        break;
+      }
+      if (performance.now() - replanStartTime > NPC_THINK_BUDGET_MS) {
         break;
       }
       if (inflightReplansRef.current.has(runtime.villager.id)) {
@@ -895,7 +957,20 @@ export default function GamePage() {
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "ArrowUp") {
+      const key = event.key.toLowerCase();
+      if (key === "w") {
+        event.preventDefault();
+        movePlayer(0, -1);
+      } else if (key === "s") {
+        event.preventDefault();
+        movePlayer(0, 1);
+      } else if (key === "a") {
+        event.preventDefault();
+        movePlayer(-1, 0);
+      } else if (key === "d") {
+        event.preventDefault();
+        movePlayer(1, 0);
+      } else if (event.key === "ArrowUp") {
         event.preventDefault();
         moveCamera(0, -1);
       } else if (event.key === "ArrowDown") {
@@ -916,7 +991,7 @@ export default function GamePage() {
       } else if (event.key === "-") {
         event.preventDefault();
         decreaseSimulationSpeed();
-      } else if (event.key.toLowerCase() === "r") {
+      } else if (key === "r") {
         event.preventDefault();
         resetDay();
       }
@@ -926,7 +1001,7 @@ export default function GamePage() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [decreaseSimulationSpeed, increaseSimulationSpeed, moveCamera, resetDay]);
+  }, [decreaseSimulationSpeed, increaseSimulationSpeed, moveCamera, movePlayer, resetDay]);
 
   const visibleTiles = useMemo(() => {
     const layerPriority = new Map(TILE_LAYER_ORDER.map((type, index) => [type, index]));
@@ -953,6 +1028,20 @@ export default function GamePage() {
         return a.tile.coordinate.x - b.tile.coordinate.x;
       });
   }, [camera.x, camera.y]);
+
+  const playerViewport = useMemo(() => {
+    const coord = parseTileIdCoordinate(playerTileId);
+    return {
+      x: coord.x - camera.x,
+      y: coord.y - camera.y,
+    };
+  }, [camera.x, camera.y, playerTileId]);
+
+  const isPlayerVisible =
+    playerViewport.x >= 0 &&
+    playerViewport.x < VIEWPORT_TILE_WIDTH &&
+    playerViewport.y >= 0 &&
+    playerViewport.y < VIEWPORT_TILE_HEIGHT;
 
   const visibleVillagers = useMemo(
     () =>
@@ -1001,15 +1090,29 @@ export default function GamePage() {
       .sort((left, right) => right.importance - left.importance)
       .slice(0, 3);
   }, [selectedVillagerRuntime]);
-  const selectedVillagerEvents = !selectedVillagerRuntime
-    ? []
-    : journalEventsRef.current
-        .filter((event) => event.villagerIds.includes(selectedVillagerRuntime.villager.id))
-        .slice(0, 3);
-  const filteredJournalEvents = journalEventsRef.current
-    .filter((event) => eventTypeFilter === "all" || event.type === eventTypeFilter)
-    .filter((event) => eventVillagerFilter === "all" || event.villagerIds.includes(eventVillagerFilter))
-    .slice(0, 20);
+  const selectedVillagerEvents = useMemo(() => {
+    if (!selectedVillagerRuntime) return [];
+    const events: SimulationJournalEvent[] = [];
+    for (const event of journalEventsRef.current) {
+      if (event.villagerIds.includes(selectedVillagerRuntime.villager.id)) {
+        events.push(event);
+        if (events.length >= 3) break;
+      }
+    }
+    return events;
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- tick invalidates ref-based journal
+  }, [selectedVillagerRuntime, tick]);
+  const filteredJournalEvents = useMemo(() => {
+    const events: SimulationJournalEvent[] = [];
+    for (const event of journalEventsRef.current) {
+      if (eventTypeFilter !== "all" && event.type !== eventTypeFilter) continue;
+      if (eventVillagerFilter !== "all" && !event.villagerIds.includes(eventVillagerFilter)) continue;
+      events.push(event);
+      if (events.length >= 20) break;
+    }
+    return events;
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- tick invalidates ref-based journal
+  }, [eventTypeFilter, eventVillagerFilter, tick]);
   const observabilityTotals = useMemo(() => {
     let requestCount = 0;
     let validDecisionCount = 0;
@@ -1171,6 +1274,18 @@ export default function GamePage() {
               ) : null}
             </div>
           ))}
+          {isPlayerVisible ? (
+            <div
+              className="viewport-player"
+              aria-label="Player avatar"
+              style={{
+                gridColumnStart: playerViewport.x + 1,
+                gridRowStart: playerViewport.y + 1,
+              }}
+            >
+              <span className="viewport-player__token">P</span>
+            </div>
+          ) : null}
         </div>
       </section>
 
@@ -1215,7 +1330,18 @@ export default function GamePage() {
               {control.label}
             </button>
           ))}
+          <button
+            type="button"
+            aria-label="Toggle camera follow player"
+            aria-pressed={cameraFollowPlayer}
+            onClick={() => setCameraFollowPlayer((current) => !current)}
+          >
+            {cameraFollowPlayer ? "Camera: Following player" : "Camera: Free"}
+          </button>
         </div>
+        <h3>Player</h3>
+        <p>Position: {playerTileId}</p>
+        <p>Move: WASD keys</p>
       </aside>
 
       <aside aria-label="Simulation debug panel" className="game-debug">
